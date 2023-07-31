@@ -20,7 +20,7 @@ public class Main {
         String fileName = "csv/data.csv";
         List<Employee> list = parseCSV(columnMapping, fileName);
         String json = listToJson(list);
-        writeString(json, "data.csv");
+        writeString(json, "csv/data.json");
     }
 
     public static List<Employee> parseCSV(String[] columnMapping, String fileName) {
